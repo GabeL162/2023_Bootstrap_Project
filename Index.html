@@ -3,93 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>WEBSITE</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="container">
-<div class="mt-3 p-3 bg-primary text-white rounded">
-  <h1> Marketplace</h1>
-  <p> buy items from my store</p>
-</div>
+    <div class="row">
+        <div class="col">
+            <div class="mt-3 p-3 bg-primary text-white rounded">
+                <h1> Marketplace</h1>
+                <p> buy items from my store</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <nav class="navbar bg-danger">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <!-- Dropdown item -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"data-bs-toggle="dropdown">Schools</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">VTHS</a></li>
+                                <li><a class="dropdown-item" href="#">Glen Meadow</a></li>
+                                <li><a class="dropdown-item" href="#">LOUNSBERRY</a></li>
+                            </ul>
 
-<div class="container">
-    <div class="float-left col-3 bg-danger rounded" style="height: 3000px">
-    SEARCH BAR
-        <div class="container mt-3">
-            <p class="h2">Schools</p>
-            <dl>
-                <dd><a href="#" class="btn btn-primary">VTHS</a></dd>
-                <dd><a href="#" class="btn btn-primary">Glen Meadow</a></dd>
-                <dd><a href="#" class="btn btn-primary">Lounsberry Hollow</a></dd>
-                <dd><a href="#" class="btn btn-primary">Rolling Hills</a></dd>
-                <dd><a href="#" class="btn btn-primary">Cedar Mountain</a></dd>
-                <dd><a href="#" class="btn btn-primary">Walnut Ridge</a></dd>
-            </dl>
-            <p class="h2">Items</p>
-            <dl>
-                <dd><a href="#" class="btn btn-primary">Furniture</a></dd>
-                <dd><a href="#" class="btn btn-primary">General Supplies</a></dd>
-                <dd><a href="#" class="btn btn-primary">Electronics</a></dd>
-                <dd><a href="#" class="btn btn-primary">Miscellaneous/Elective</a></dd>
-            </dl>
-        </div>
-        <!-- CARD VERSION
-        High School
-    <div class="card p-2 mx-5 my-2" style="width:200px">
-        <img class="card-img-top" src="img/vths.jpeg" alt="Card image">
-        <div class="card-body">
-            <h4 class="card-title">VTHS</h4>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Listed Items</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                        <button class="btn btn-light navbar-btn">Buy My Stuff!!!</button>
+                        <button class="btn btn-danger navbar-btn">Buy My Stuff!!!</button>
+
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
-     glen meadow
-    <div class="card p-2 mx-5 my-2" style="width:200px">
-        <img class="card-img-top" src="img/glenMeadow.jpeg" alt="Card image">
-        <div class="card-body">
-            <h4 class="card-title">Glen Meadow</h4>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Listed Items</a>
-        </div>
+
+
+        <div class="float-left col-3 bg-danger rounded" style="height: 1000px">
+            SEARCH BAR
+            <div class="container mt-3">
+                <p class="h2">Schools</p>
+                <dl>
+                    <dd><a href="#" class="btn btn-primary">VTHS</a></dd>
+                    <dd><a href="#" class="btn btn-primary">Glen Meadow</a></dd>
+                    <dd><a href="#" class="btn btn-primary">Lounsberry Hollow</a></dd>
+                    <dd><a href="#" class="btn btn-primary">Rolling Hills</a></dd>
+                    <dd><a href="#" class="btn btn-primary">Cedar Mountain</a></dd>
+                    <dd><a href="#" class="btn btn-primary">Walnut Ridge</a></dd>
+                </dl>
+                <p class="h2">Items</p>
+                <dl>
+                    <dd><a href="#" class="btn btn-primary">Furniture</a></dd>
+                    <dd><a href="#" class="btn btn-primary">General Supplies</a></dd>
+                    <dd><a href="#" class="btn btn-primary">Electronics</a></dd>
+                    <dd><a href="#" class="btn btn-primary">Miscellaneous/Electives</a></dd>
+                </dl>
+            </div>
     </div>
-     lounsberry hollow
-    <div class="card p-2 mx-5 my-2" style="width:200px">
-        <img class="card-img-top" src="img/lounsberryHollow.jpeg" alt="Card image">
-        <div class="card-body">
-            <h4 class="card-title">Lounsberry Hollow</h4>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Listed Items</a>
-        </div>
-    </div>
-    rolling hills
-    <div class="card p-2 mx-5 my-2" style="width:200px">
-        <img class="card-img-top" src="img/RollingHills.jpeg" alt="Card image">
-        <div class="card-body">
-            <h4 class="card-title">Rolling Hills</h4>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Listed Items</a>
-        </div>
-    </div>
-    cedar mountain
-    <div class="card p-2 mx-5 my-2" style="width:200px">
-        <img class="card-img-top" src="img/CedarMountain.jpeg" alt="Card image">
-        <div class="card-body">
-            <h4 class="card-title">Cedar Mountain</h4>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Listed Items</a>
-        </div>
-    </div>
-     walnut ridge
-    <div class="card p-2 mx-5 my-2" style="width:200px">
-        <img class="card-img-top" src="img/walnutRidge.jpeg" alt="Card image">
-        <div class="card-body">
-            <h4 class="card-title">Walnut Ridge</h4>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Listed Items</a>
-        </div>
-    </div>
-        -->
+    <div class="col-4 bg-warning container">
+        <div class="float-right">
+            ujnsvlvljifnlihaef
     </div>
 </div>
 </div>
