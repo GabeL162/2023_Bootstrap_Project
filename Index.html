@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>WEBSITE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
@@ -17,13 +19,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3">
             <nav class="navbar bg-danger">
                 <div class="container-fluid">
                     <ul class="navbar-nav">
                         <!-- Dropdown item -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"data-bs-toggle="dropdown">Schools</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Schools</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">VTHS</a></li>
                                 <li><a class="dropdown-item" href="#">Glen Meadow</a></li>
@@ -33,13 +35,16 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link" href="#">Electronics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
+                            <a class="nav-link" href="#">Furniture</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 3</a>
+                            <a class="nav-link" href="#">General Supplies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Misc/Electives</a>
                         </li>
                         <button class="btn btn-light navbar-btn">Buy My Stuff!!!</button>
                         <button class="btn btn-danger navbar-btn">Buy My Stuff!!!</button>
@@ -47,36 +52,57 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-    </div>
-
-
-        <div class="float-left col-3 bg-danger rounded" style="height: 1000px">
-            SEARCH BAR
-            <div class="container mt-3">
-                <p class="h2">Schools</p>
-                <dl>
-                    <dd><a href="#" class="btn btn-primary">VTHS</a></dd>
-                    <dd><a href="#" class="btn btn-primary">Glen Meadow</a></dd>
-                    <dd><a href="#" class="btn btn-primary">Lounsberry Hollow</a></dd>
-                    <dd><a href="#" class="btn btn-primary">Rolling Hills</a></dd>
-                    <dd><a href="#" class="btn btn-primary">Cedar Mountain</a></dd>
-                    <dd><a href="#" class="btn btn-primary">Walnut Ridge</a></dd>
-                </dl>
-                <p class="h2">Items</p>
-                <dl>
-                    <dd><a href="#" class="btn btn-primary">Furniture</a></dd>
-                    <dd><a href="#" class="btn btn-primary">General Supplies</a></dd>
-                    <dd><a href="#" class="btn btn-primary">Electronics</a></dd>
-                    <dd><a href="#" class="btn btn-primary">Miscellaneous/Electives</a></dd>
-                </dl>
             </div>
+        <div class="col-4">
+            <div class="bg-warning container">
+                <div class="float-right">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ligula congue, blandit nulla ut, aliquet nisi. Proin nec metus viverra urna placerat tempor. Nam eget tellus eu lectus consectetur mollis. Morbi cursus dui arcu, in convallis ante congue vitae. Maecenas dignissim metus ante, interdum mollis libero vestibulum ut. Vestibulum non arcu vel odio sagittis maximus sed ac ante. Aliquam ac finibus nulla. Aenean vehicula turpis massa, sed fringilla diam iaculis at. Donec vestibulum ligula ante, vitae interdum turpis lacinia malesuada.
+                </div>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div class="col-4">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/vths.jpeg" alt="Los Angeles" class="d-block" style="width:400px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/glenMeadow.jpeg" alt="New York" class="d-block" style="width:400px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/lounsberryHollow.jpeg" alt="chicago" class="d-block" style="width:400px">
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
     </div>
-    <div class="col-4 bg-warning container">
-        <div class="float-right">
-            ujnsvlvljifnlihaef
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     </div>
-</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
